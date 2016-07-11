@@ -1,3 +1,3 @@
       subroutine stackf()
-      write (*,*) "F: subroutine 'stackf'"
+      write (*,*) "F: in 'stackf'"
       end subroutine

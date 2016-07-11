@@ -1,9 +1,9 @@
 
 import stackcy
 
-def hellopy():
-    print(' P: function \'hellopy\'')
+def stackpy():
+    print(' P: in \'stackpy\'')
     stackcy.stackcy()
 
 if __name__ == '__main__':
-    hellopy()
+    stackpy()
