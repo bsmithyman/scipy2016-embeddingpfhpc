@@ -4,6 +4,6 @@
 void stackf_();
 
 void stackc() {
-    printf("C: function 'stackc'\n");
+    printf(" C: function 'stackc'\n");
     stackf_();
 }
