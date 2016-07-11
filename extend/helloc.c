@@ -1,9 +1,9 @@
 
 #import <stdio.h>
 
-void _hellof();
+void hellof_();
 
 void helloc() {
     printf("C: function 'helloc'\n");
-    _hellof();
+    hellof_();
 }
