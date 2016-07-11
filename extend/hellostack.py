@@ -1,9 +1,9 @@
 
-import hellocy
+import stackcy
 
 def hellopy():
     print('P: function \'hellopy\'')
-    hellocy.hellocy()
+    stackcy.stackcy()
 
 if __name__ == '__main__':
     hellopy()

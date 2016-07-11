@@ -9,7 +9,7 @@ all: stackcy.so
 stackf.o: stackf.f
 	gfortran stackf.f -c -o stackf.o -fPIC
 
-stackcy.so: stackcy.pyx helloc.c stackf.o
+stackcy.so: stackcy.pyx stackc.c stackf.o
 	python setup.py build_ext --inplace
 
 clean:
