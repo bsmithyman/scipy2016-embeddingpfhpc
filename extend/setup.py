@@ -2,11 +2,11 @@ from distutils.core import setup
 from Cython.Build import cythonize
 from distutils.extension import Extension
 
-sources = ['hellocy.pyx', 'helloc.c']
-extensions = [Extension('hellocy',
+sources = ['stackcy.pyx', 'stackc.c']
+extensions = [Extension('stackcy',
                         sources,
                         extra_link_args=['-L/Users/brendan/anaconda/lib', '-lgfortran'],
-                        extra_objects=['hellof.o'],
+                        extra_objects=['stackf.o'],
                         extra_compile_args=['-fPIC'],
              )]
 

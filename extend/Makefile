@@ -4,13 +4,13 @@ LDFLAGS=$(shell python-config --ldflags)
 FFLAGS=-static-libgcc
 
 
-all: hellocy.so
+all: stackcy.so
 
-hellof.o: hellof.f
-	gfortran hellof.f -c -o hellof.o -fPIC
+stackf.o: stackf.f
+	gfortran stackf.f -c -o stackf.o -fPIC
 
-hellocy.so: hellocy.pyx helloc.c hellof.o
+stackcy.so: stackcy.pyx helloc.c stackf.o
 	python setup.py build_ext --inplace
 
 clean:
-	rm hellocy.c hellocy.so hellof.o
+	rm stackcy.c stackcy.so stackf.o
