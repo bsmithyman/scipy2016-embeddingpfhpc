@@ -11,3 +11,4 @@ void stackc() {
 void stackc_() {
     printf(" C: in 'stackc_'\n");
     stackf_();
+}

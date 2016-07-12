@@ -14,8 +14,12 @@ def stackpy_fc():
     stackcy.stackcy_fc()
 
 if __name__ == '__main__':
+    print
+    print('calling \'stackpy\'')
     stackpy()
-    print()
+    print
+    print('calling \'stackpy_noc\'')
     stackpy_noc()
-    print()
+    print
+    print('calling \'stackpy_fc\'')
     stackpy_fc()
