@@ -21,7 +21,7 @@ embed.o: embed.f
 	gfortran -fPIC embed.f -c -o embed.o
 
 embed: embed.o support.o mymod.o
-	gfortran $(LDFLAGS) -lgfortran -o embed embed.o support.o mymod.o
+	gcc $(CFLAGS) $(LDFLAGS) -fPIC -lgfortran -lm -o embed embed.o support.o mymod.o
 
 clean:
-	rm basic embed mymod.c *.o
+	rm -rf basic embed mymod.c *.o *.dSYM
